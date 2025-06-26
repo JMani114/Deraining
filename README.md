@@ -14,5 +14,6 @@ Develop a deep network for single-image deraining (SID) at high resolution, sign
 <p align="justify">
 Most convolutional neural networks dedicated to deraining adopt an autoencoder structure, consisting of an encoder and a decoder. Therefore, it was essential to select a feature extractor (encoder) capable of detecting rain. To this end, well-established architectures—VGG16, ResNet50, ConvNeXtSmall, EfficientNetB0, and Xception—were evaluated to determine which one best detects rain disturbances.
 Below are the training graphs for the selected networks, showing the Accuracy and Loss metrics. All were trained on the same LHP-Rain dataset.
-![Network Training - Accuracy](images/Network_Training_Accuracy.png)
 </p>
+![Network Training - Accuracy](images/Network_Training_Accuracy.png)
+
