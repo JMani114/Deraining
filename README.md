@@ -15,6 +15,7 @@ Develop a deep network for single-image deraining (SID) at high resolution, sign
 Most convolutional neural networks dedicated to derainization adopt an autoencoder structure, composed of an encoder and a decoder. Therefore, it was essential to select a feature extractor (encoder) capable of detecting rainfall. To do so, established architectures (VGG16, ResNet50, ConvNeXtSmall, EfficientNetB0, and Xception) were evaluated to determine which one best detects rainfall disturbances. The training graphs of the selected networks, showing the Accuracy and Loss metrics, are shown in Fig. 1 and Fig. 2 below. All of them were trained on the same LHP-Rain dataset.
 </p>
 
+<p align="center">
 ![Network Training - Accuracy](images/Network_Training_Accuracy.png)
 
 *Fig. 1.* Training accuracy graph.
@@ -22,3 +23,18 @@ Most convolutional neural networks dedicated to derainization adopt an autoencod
 ![Network Training - Loss](images/Network_Training_Loss.png)
 
 *Fig. 2.* Training loss graph.
+</p>
+
+<p align="justify">
+The LHP-Rain dataset is divided into training, testing, and validation folders, which enables the evaluation of accuracy and loss metrics during training. This allows measuring the network’s generalization capability on previously unseen data. These results are shown in Figures 3 and 4.
+</p>
+
+<p align="center">
+![Network Validation - Accuracy](images/Network_Training_Validation_Accuracy.png)
+
+*Fig. 3.* Accuracy validation graph.
+
+![Network Validation - Loss](images/Network_Training_Validation_Loss.png)
+
+*Fig. 4.* Loss validation graph.
+</p>
