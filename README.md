@@ -35,11 +35,11 @@ The LHP-Rain dataset is divided into training, testing, and validation folders, 
 <p align="center">
   <img src="images/Network_Training_Validation_Accuracy.png" alt="Network Validation - Accuracy" />
   <br>
-  <em>Fig. 3.* Accuracy validation graph.</em>
+  <em>Fig. 3. Accuracy validation graph.</em>
 </p>
 
 <p align="center">
   <img src="images/Network_Training_Validation _Loss.png" alt="Network Validation - Loss" />
   <br>
-  <em>Fig. 4.* Loss validation graph.</em>
+  <em>Fig. 4. Loss validation graph.</em>
 </p>
