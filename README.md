@@ -9,3 +9,8 @@ This project focuses on the development of a method to process high-resolution i
 <p align="justify">
 Develop a deep network for single-image deraining (SID) at high resolution, significantly improving visual quality while matching or surpassing state-of-the-art performance with-out relying on costly hardware.
 </p>
+
+## Rain Classification
+<p align="justify">
+Most convolutional neural networks dedicated to deraining adopt an autoencoder structure, consisting of an encoder and a decoder. Therefore, it was essential to select a feature extractor (encoder) capable of detecting rain. To this end, well-established architectures—VGG16, ResNet50, ConvNeXtSmall, EfficientNetB0, and Xception—were evaluated to determine which one best detects rain disturbances.
+</p>
