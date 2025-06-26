@@ -28,7 +28,6 @@ Most convolutional neural networks dedicated to derainization adopt an autoencod
 The LHP-Rain dataset is divided into training, testing, and validation folders, which enables the evaluation of accuracy and loss metrics during training. This allows measuring the network’s generalization capability on previously unseen data. These results are shown in Figures 3 and 4.
 </p>
 
-<p align="center">
 ![Network Validation - Accuracy](images/Network_Training_Validation_Accuracy.png)
 
 *Fig. 3.* Accuracy validation graph.
@@ -36,4 +35,3 @@ The LHP-Rain dataset is divided into training, testing, and validation folders, 
 ![Network Validation - Loss](images/Network_Training_Validation_Loss.png)
 
 *Fig. 4.* Loss validation graph.
-</p>
