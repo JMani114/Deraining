@@ -17,5 +17,9 @@ Below are the training graphs for the selected networks, showing the Accuracy an
 </p>
 
 ![Network Training - Accuracy](images/Network_Training_Accuracy.png)
+
 *Fig. 1.* Training accuracy graph.
 
+![Network Training - Loss](images/Network_Training_Loss.png)
+
+*Fig. 1.* Training loss graph.
