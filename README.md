@@ -1,3 +1,3 @@
 # Deraining
 
-# What it the DERAINING?
+# What is DERAINING?
