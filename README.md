@@ -54,6 +54,8 @@ The validation folder, which contains 600 rainy images and 600 non-rainy images,
   <em>Fig. 5. Image comparison, a) image with rain and b) image without rain..</em>
 </p>
 
+**Table 1: Classification accuracy on rainy vs. clean images.**
+
 | Model           | Accuracy | Error   |
 |-----------------|---------:|--------:|
 | VGG16           |   75.33% |  24.67% |
