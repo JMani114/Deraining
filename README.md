@@ -71,7 +71,7 @@ Images are split into patches; each patch passes through a pretrained network tr
 </p>
 
 <p align="center">
-  <img src="images/MOdified_encoder.png" alt="Modified_encoder" />
+  <img src="images/Modified_encoder.png" alt="Modified_encoder" />
   <br>
   <em>Fig. 6. Modified encoder with patch processing..</em>
 </p>
