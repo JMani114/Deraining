@@ -51,7 +51,7 @@ The validation folder, which contains 600 rainy images and 600 non-rainy images,
 <p align="center">
   <img src="images/Compative_of the_images.png" alt="Compative of the images" />
   <br>
-  <em>Fig. 5. Image comparison, a) image with rain and b) image without rain..</em>
+  <em>Fig. 5. Image comparison, a) image with rain and b) image without rain.</em>
 </p>
 
 **Table 1: Classification accuracy on rainy vs. clean images.**
