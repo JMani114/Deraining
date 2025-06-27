@@ -64,28 +64,6 @@ The validation folder, which contains 600 rainy images and 600 non-rainy images,
 | EfficientNetB0  |   81.74% |  18.26% |
 | Xception        |   68.81% |  31.19% |
 
-## Encoder Modification
+## Patch Deraining in ECNet
 
-<p align="justify">
-Images are split into patches; each patch passes through a pretrained network truncated before the final tensor. Intermediate tensors are reassembled spatially and forwarded through the remaining blocks to yield a 7 × 7 × C tensor show in Fig. 6.
-</p>
 
-<p align="center">
-  <img src="images/Modified_encoder.png" alt="Modified_encoder" />
-  <br>
-  <em>Fig. 6. Modified encoder with patch processing..</em>
-</p>
-
-<p align="justify">
-Patch processing raised validation accuracy and reduced epoch time versus classical scaling, notably for ConvNeXtSmall and EfficientNetB0 shown in Table 2.
-</p>
-
-**Table 2: Configuration comparison for different models.**
-
-| Setup           |  VGG16  | ConvNeXtBase | ResNet50V2 |
-|-----------------|--------:|-------------:|-----------:|
-| VGG16           |  75.33% |    24.67%    |
-| ResNet50        |  79.07% |    20.93%    |
-| ConvNeXtSmall   |  89.85% |    10.15%    |
-| EfficientNetB0  |  81.74% |    18.26%    |
-| Xception        |  68.81% |    31.19%    |
