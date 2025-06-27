@@ -66,4 +66,44 @@ The validation folder, which contains 600 rainy images and 600 non-rainy images,
 
 ## Patch Deraining in ECNet
 
+<p align="justify">
+In this section, a visual comparison of the results obtained by the different neural networks will be presented, showing the original rainy image, the clean reference image, and the inferred image.
+</p>
 
+### DRSformer
+
+<p align="center">
+  <img src="images/DRSformer.png" alt="DRSformer" />
+  <br>
+  <em>Fig. 6. Inference using the DRSformer network. a) Clean image (no rain); b) Image inferred by the network;c) Rainy image.</em>
+</p>
+
+<p align="center">
+  <img src="images/MPRNet.png" alt="MPRNet" />
+  <br>
+  <em>Fig. 6. Inference using the MPRNet network. a) Clean image (no rain); b) Image inferred by the network;c) Rainy image.</em>
+</p>
+
+<p align="center">
+  <img src="images/ECNet.png" alt="ECNet" />
+  <br>
+  <em>Fig. 6. Inference using the ECNet network. a) Clean image (no rain); b) Image inferred by the network;c) Rainy image.</em>
+</p>
+
+<p align="center">
+  <img src="images/3x3.png" alt="3x3" />
+  <br>
+  <em>Fig. 6. Inference using the proposed 9-patch method. a) Clean image (no rain); b) Image inferred by the network;c) Rainy image.</em>
+</p>
+
+<p align="center">
+  <img src="images/4x4.png" alt="4x4" />
+  <br>
+  <em>Fig. 6. Inference using the proposed 16-patch method. a) Clean image (no rain); b) Image inferred by the network;c) Rainy image.</em>
+</p>
+
+<p align="center">
+  <img src="images/8x5.png" alt="8x5" />
+  <br>
+  <em>Fig. 6. Inference using the proposed 40-patch method. a) Clean image (no rain); b) Image inferred by the network;c) Rainy image.</em>
+</p>
