@@ -43,3 +43,21 @@ The LHP-Rain dataset is divided into training, testing, and validation folders, 
   <br>
   <em>Fig. 4. Loss validation graph.</em>
 </p>
+
+<p align="justify">
+The validation folder, which contains 600 rainy images and 600 non-rainy images, was processed by the model. A sample of these images is shown in Fig. 5, where the comparisons between rainy and non-rainy images from this dataset are presented. Finally, Table 1 displays the accuracy and error rates achieved by each network.
+</p>
+
+<p align="center">
+  <img src="images/Compative_of the_images.png" alt="Compative of the images" />
+  <br>
+  <em>Fig. 5. Image comparison, a) image with rain and b) image without rain..</em>
+</p>
+
+| Model           | Accuracy | Error   |
+|-----------------|---------:|--------:|
+| VGG16           |   75.33% |  24.67% |
+| ResNet50        |   79.07% |  20.93% |
+| ConvNeXtSmall   |   89.85% |  10.15% |
+| EfficientNetB0  |   81.74% |  18.26% |
+| Xception        |   68.81% |  31.19% |
