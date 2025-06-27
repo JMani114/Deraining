@@ -81,29 +81,29 @@ In this section, a visual comparison of the results obtained by the different ne
 <p align="center">
   <img src="images/MPRNet.png" alt="MPRNet" />
   <br>
-  <em>Fig. 6. Inference using the MPRNet network. a) Clean image (no rain); b) Image inferred by the network;c) Rainy image.</em>
+  <em>Fig. 7. Inference using the MPRNet network. a) Clean image (no rain); b) Image inferred by the network;c) Rainy image.</em>
 </p>
 
 <p align="center">
   <img src="images/ECNet.png" alt="ECNet" />
   <br>
-  <em>Fig. 6. Inference using the ECNet network. a) Clean image (no rain); b) Image inferred by the network;c) Rainy image.</em>
+  <em>Fig. 8. Inference using the ECNet network. a) Clean image (no rain); b) Image inferred by the network;c) Rainy image.</em>
 </p>
 
 <p align="center">
   <img src="images/3x3.png" alt="3x3" />
   <br>
-  <em>Fig. 6. Inference using the proposed 9-patch method. a) Clean image (no rain); b) Image inferred by the network;c) Rainy image.</em>
+  <em>Fig. 9. Inference using the proposed 9-patch method. a) Clean image (no rain); b) Image inferred by the network;c) Rainy image.</em>
 </p>
 
 <p align="center">
   <img src="images/4x4.png" alt="4x4" />
   <br>
-  <em>Fig. 6. Inference using the proposed 16-patch method. a) Clean image (no rain); b) Image inferred by the network;c) Rainy image.</em>
+  <em>Fig. 10. Inference using the proposed 16-patch method. a) Clean image (no rain); b) Image inferred by the network;c) Rainy image.</em>
 </p>
 
 <p align="center">
   <img src="images/8x5.png" alt="8x5" />
   <br>
-  <em>Fig. 6. Inference using the proposed 40-patch method. a) Clean image (no rain); b) Image inferred by the network;c) Rainy image.</em>
+  <em>Fig. 11. Inference using the proposed 40-patch method. a) Clean image (no rain); b) Image inferred by the network;c) Rainy image.</em>
 </p>
