@@ -1,9 +1,22 @@
-# Patch-Based Local Deraining for High-Resolution Images
+# Deep Learning Model for Image Deraining
 
 ## Abstract
 <p align="justify">
 This project focuses on the development of a method to process high-resolution images (HD, Full HD, 4K, and 8K) using neural networks dedicated to deraining. Its goal is to reduce or eliminate the distortions present in images captured under rainy conditions. Although there are currently numerous neural models—from convolutional neural networks (CNNs) and generative adversarial networks (GANs) to transformers—they all face challenges when working with very high-resolution images due to the substantial computational power required. While images can be downscaled to lower resolutions, doing so results in the loss of relevant information. Therefore, a method has been devised that consists of dividing the image into patches, processing each patch with the network to remove rain, and then recombining them to reconstruct the original image.
 </p>
+
+## Problem
+<p aling="justify">
+Rain marks degrade image quality and affect computer vision systems.
+This project explores a deep learning approach to remove rain artifacts from high-resolution images using neural networks.
+
+## Methodology
+<p aling="justify">
+1. Synthetic rain dataset generation
+2. Image preprocessing
+3. Patch extraction
+4. Neural network training
+5. Image reconstruction
 
 ## Objetive
 <p align="justify">
