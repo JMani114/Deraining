@@ -11,7 +11,6 @@ Rain marks degrade image quality and affect computer vision systems.
 This project explores a deep learning approach to remove rain artifacts from high-resolution images using neural networks.
 
 ## Methodology
-<p aling="justify">
   1. Synthetic rain dataset generation
   2. Image preprocessing
   3. Patch extraction
