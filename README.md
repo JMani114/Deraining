@@ -12,11 +12,11 @@ This project explores a deep learning approach to remove rain artifacts from hig
 
 ## Methodology
 <p aling="justify">
-1. Synthetic rain dataset generation
-2. Image preprocessing
-3. Patch extraction
-4. Neural network training
-5. Image reconstruction
+  1. Synthetic rain dataset generation
+  2. Image preprocessing
+  3. Patch extraction
+  4. Neural network training
+  5. Image reconstruction
 
 ## Objetive
 <p align="justify">
