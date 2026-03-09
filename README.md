@@ -2,7 +2,7 @@
 
 ## Abstract
 <p align="justify">
-This project focuses on the development of a method to process high-resolution images (HD, Full HD, 4K, and 8K) using neural networks dedicated to deraining. Its goal is to reduce or eliminate the distortions present in images captured under rainy conditions. Although there are currently numerous neural models—from convolutional neural networks (CNNs) and generative adversarial networks (GANs) to transformers—they all face challenges when working with very high-resolution images due to the substantial computational power required. While images can be downscaled to lower resolutions, doing so results in the loss of relevant information. Therefore, a method has been devised that consists of dividing the image into patches, processing each patch with the network to remove rain, and then recombining them to reconstruct the original image.
+This project focuses on developing a method for processing high-resolution images (Full HD, 2K, and 4K) using neural networks dedicated to deraining, without losing information through size reduction. Its goal is to reduce or eliminate distortions present in images captured under rainy conditions. While numerous neural network models exist—ranging from convolutional neural networks (CNNs) and generative adversarial networks (GANs) to transformers—they all present challenges when working with very high-resolution images due to the considerable computational power required. Although images can be reduced to lower resolutions, relevant information is lost in the process. Therefore, a method has been devised that involves dividing the image into patches, processing each patch with the network to remove the rain, and then recombining them to reconstruct the original image, creating a meta-architecture called NimbusNet.
 </p>
 
 ## Problem
@@ -10,12 +10,8 @@ This project focuses on the development of a method to process high-resolution i
 Rain marks degrade image quality and affect computer vision systems.
 This project explores a deep learning approach to remove rain artifacts from high-resolution images using neural networks.
 
-## Objetive
-<p align="justify">
-Develop a deep network for single-image deraining (SID) at high resolution, significantly improving visual quality while matching or surpassing state-of-the-art performance with-out relying on costly hardware.
-</p>
-
 ## Methodology
+The methodology used in this project was as follows:
   1. Synthetic rain dataset generation
   2. Image preprocessing
   3. Patch extraction
@@ -23,8 +19,9 @@ Develop a deep network for single-image deraining (SID) at high resolution, sign
   5. Image reconstruction
 
 ## Network Architecture
+The main quality of NimbusNet's architecture is to divide the work, as shown in the image.
 <p align="center">
-  <img src="images/Network_Training_Accuracy.png" alt="Network Training - Accuracy" />
+  <img src="images/Nimbustnet.png" alt="NimbustNet Architecture" />
   <br>
   <em>Fig. 1. Training accuracy graph.</em>
 </p>
