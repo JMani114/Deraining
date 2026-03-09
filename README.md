@@ -26,59 +26,60 @@ The main quality of NimbusNet's architecture is to divide the work, as shown in 
   <em>NimbustNet Architecture.</em>
 </p>
 
-## Rain Classification
-<p align="justify">
-Most convolutional neural networks dedicated to derainization adopt an autoencoder structure, composed of an encoder and a decoder. Therefore, it was essential to select a feature extractor (encoder) capable of detecting rainfall. To do so, established architectures (VGG16, ResNet50, ConvNeXtSmall, EfficientNetB0, and Xception) were evaluated to determine which one best detects rainfall disturbances. The training graphs of the selected networks, showing the Accuracy and Loss metrics, are shown in Fig. 1 and Fig. 2 below. All of them were trained on the same LHP-Rain dataset.
-</p>
+## Results 
+The results from the data-DEGRAJAD and LHP-Rain databases are shown in Tables 1 and 2 respectively, showing the dimensions, computational consumption (MiB), PSNR and SSIM metrics in the Full-HD, 2K and 4K dimensions.
 
-<p align="center">
-  <img src="images/Network_Training_Accuracy.png" alt="Network Training - Accuracy" />
-  <br>
-  <em>Fig. 1. Training accuracy graph.</em>
-</p>
+**Table 1: GPU memory consumption and quality metrics (PSNR and SSIM) for the networks evaluated in the Data-DEGRAJAD database..**
 
-<p align="center">
-  <img src="images/Network_Training_Loss.png" alt="Network Training - Loss" />
-  <br>
-  <em>Fig. 2. Training loss graph.</em>
-</p>
+| Model           | Resolution | Scale   | GPU (MiB) | PSNR (dB) |  SSIM  |
+|-----------------|-----------:|--------:|----------:|----------:|-------:|
+| ECNetLL         | 512x512    | Full HD |    1796   |  29.0651  | 0.8514 |
+| ECNetLL         | 1920x1080  | Full HD |    8790   |  32.1824  | 0.9151 |
+| DRSformer       | 512x512    | Full HD |    6257   |  29.0483  | 0.8503 |
+| DRSformer       | 1920x1080  | Full HD |    32079  |     -     |    -   |
+| MPRNet          | 512x512    | Full HD |    2201   |  29.4964  | 0.8649 |
+| MPRNet          | 1920x1080  | Full HD |    10224  |  32.0982  | 0.9121 |
+| NimbusNet       | 1920x1080  | Full HD |    2170   |  31.9018  | 0.9116 |
+| ECNetLL         | 512x512    |    2K   |    1796   |  28.9911  | 0.8423 |
+| ECNetLL         | 2560x1440  |    2K   |    17600  |     -     |    -   |
+| DRSformer       | 512x512    |    2K   |    6257   |  28.9745  | 0.8414 |
+| DRSformer       | 2560x1440  |    2K   |    38270  |     -     |    -   | 
+| MPRNet          | 512x512    |    2K   |    2115   |  29.4204  | 0.8544 |
+| MPRNet          | 2560x1440  |    2K   |    11600  |     -     |    -   |
+| NimbusNet       | 2560x1440  |    2K   |    1945   |  30.7609  | 0.8987 |
+| ECNetLL         | 512x512    |    4K   |    1796   |  28.9820  | 0.8385 |
+| ECNetLL         | 3840x2160  |    4K   |    20430  |     -     |    -   |
+| DRSformer       | 512x512    |    4K   |    6257   |  28.9615  | 0.8378 |   
+| DRSformer       | 3840x2160  |    4K   |    43200  |     -     |    -   |
+| MPRNet          | 512x512    |    4K   |    2115   |  29.4111  | 0.8480 |
+| MPRNet          | 3840x2160  |    4K   |    18800  |     -     |    -   |
+| NimbusNet       | 3840x2160  |    4K   |    1744   |  26.3724  | 0.8218 |
 
+**Table 2: GPU memory consumption and quality metrics (PSNR and SSIM) for the networks evaluated in the LHP-Rain database..**
 
-<p align="justify">
-The LHP-Rain dataset is divided into training, testing, and validation folders, which enables the evaluation of accuracy and loss metrics during training. This allows measuring the network’s generalization capability on previously unseen data. These results are shown in Figures 3 and 4.
-</p>
-
-<p align="center">
-  <img src="images/Network_Training_Validation_Accuracy.png" alt="Network Validation - Accuracy" />
-  <br>
-  <em>Fig. 3. Accuracy validation graph.</em>
-</p>
-
-<p align="center">
-  <img src="images/Network_Training_Validation _Loss.png" alt="Network Validation - Loss" />
-  <br>
-  <em>Fig. 4. Loss validation graph.</em>
-</p>
-
-<p align="justify">
-The validation folder, which contains 600 rainy images and 600 non-rainy images, was processed by the model. A sample of these images is shown in Fig. 5, where the comparisons between rainy and non-rainy images from this dataset are presented. Finally, Table 1 displays the accuracy and error rates achieved by each network.
-</p>
-
-<p align="center">
-  <img src="images/Compative_of the_images.png" alt="Compative of the images" />
-  <br>
-  <em>Fig. 5. Image comparison, a) image with rain and b) image without rain.</em>
-</p>
-
-**Table 1: Classification accuracy on rainy vs. clean images.**
-
-| Model           | Accuracy | Error   |
-|-----------------|---------:|--------:|
-| VGG16           |   75.33% |  24.67% |
-| ResNet50        |   79.07% |  20.93% |
-| ConvNeXtSmall   |   89.85% |  10.15% |
-| EfficientNetB0  |   81.74% |  18.26% |
-| Xception        |   68.81% |  31.19% |
+| Model           | Resolution | Scale   | GPU (MiB) | PSNR (dB) |  SSIM  |
+|-----------------|-----------:|--------:|----------:|----------:|-------:|
+| ECNetLL         | 512x512    | Full HD |    1796   |  26.7057  | 0.8048 |
+| ECNetLL         | 1920x1080  | Full HD |    8790   |  29.4949  | 0.8083 |
+| DRSformer       | 512x512    | Full HD |    6257   |  25.2501  | 0.7431 |
+| DRSformer       | 1920x1080  | Full HD |    32079  |     -     |    -   |
+| MPRNet          | 512x512    | Full HD |    2201   |  30.5881  | 0.8786 |
+| MPRNet          | 1920x1080  | Full HD |    10224  |  34.9273  | 0.8889 |
+| NimbusNet       | 1920x1080  | Full HD |    2170   |  28.3045  | 0.7842 |
+| ECNetLL         | 512x512    |    2K   |    1796   |  26.6503  | 0.8007 |
+| ECNetLL         | 2560x1440  |    2K   |    17600  |     -     |    -   |
+| DRSformer       | 512x512    |    2K   |    6257   |  25.2024  | 0.7467 |
+| DRSformer       | 2560x1440  |    2K   |    38270  |     -     |    -   | 
+| MPRNet          | 512x512    |    2K   |    2115   |  30.5031  | 0.8673 |
+| MPRNet          | 2560x1440  |    2K   |    11600  |     -     |    -   |
+| NimbusNet       | 2560x1440  |    2K   |    1945   |  27.8101  | 0.7728 |
+| ECNetLL         | 512x512    |    4K   |    1796   |  26.6433  | 0.8042 |
+| ECNetLL         | 3840x2160  |    4K   |    20430  |     -     |    -   |
+| DRSformer       | 512x512    |    4K   |    6257   |  25.1964  | 0.7630 |   
+| DRSformer       | 3840x2160  |    4K   |    43200  |     -     |    -   |
+| MPRNet          | 512x512    |    4K   |    2115   |  30.4925  | 0.8591 |
+| MPRNet          | 3840x2160  |    4K   |    18800  |     -     |    -   |
+| NimbusNet       | 3840x2160  |    4K   |    1744   |  23.5738  | 0.6903 |
 
 ## Patch Deraining in ECNet
 
