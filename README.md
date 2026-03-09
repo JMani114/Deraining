@@ -23,7 +23,7 @@ The main quality of NimbusNet's architecture is to divide the work, as shown in 
 <p align="center">
   <img src="images/Nimbustnet.png" alt="NimbustNet Architecture" />
   <br>
-  <em>Fig. 1. Training accuracy graph.</em>
+  <em>NimbustNet Architecture.</em>
 </p>
 
 ## Rain Classification
