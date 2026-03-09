@@ -10,6 +10,11 @@ This project focuses on the development of a method to process high-resolution i
 Rain marks degrade image quality and affect computer vision systems.
 This project explores a deep learning approach to remove rain artifacts from high-resolution images using neural networks.
 
+## Objetive
+<p align="justify">
+Develop a deep network for single-image deraining (SID) at high resolution, significantly improving visual quality while matching or surpassing state-of-the-art performance with-out relying on costly hardware.
+</p>
+
 ## Methodology
   1. Synthetic rain dataset generation
   2. Image preprocessing
@@ -17,9 +22,11 @@ This project explores a deep learning approach to remove rain artifacts from hig
   4. Neural network training
   5. Image reconstruction
 
-## Objetive
-<p align="justify">
-Develop a deep network for single-image deraining (SID) at high resolution, significantly improving visual quality while matching or surpassing state-of-the-art performance with-out relying on costly hardware.
+## Network Architecture
+<p align="center">
+  <img src="images/Network_Training_Accuracy.png" alt="Network Training - Accuracy" />
+  <br>
+  <em>Fig. 1. Training accuracy graph.</em>
 </p>
 
 ## Rain Classification
